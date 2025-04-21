@@ -660,6 +660,9 @@ def payment_successful():
 def terms_and_conditions():
     return render_template("terms.html")
 
+@app.route('/privacypolicy')
+def privacypolicy():
+    return render_template("privacypolicy.html")
 
 @app.route('/failed', methods=['GET', 'POST'])
 def payment_failed():
